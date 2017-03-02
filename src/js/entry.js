@@ -1,8 +1,7 @@
 import debounce from 'lodash.debounce'
 import * as $ from './utils/dom'
 import isMobile from './utils/is-mobile'
-
-const DEV_MODE = window.location.hostname.indexOf('localhost') > -1
+import graphic from './graphic'
 
 const bodyEl = $.select('body')
 let previousWidth = 0
@@ -15,14 +14,16 @@ function addMobileClass() {
 function handleResize() {
 	const width = bodyEl.offsetWidth
 	if (previousWidth !== width) {
-		// resize here
 		previousWidth = width
+
+		// call resize function here
 	}
 }
 
 function init() {
 	addMobileClass()
 	window.addEventListener('resize', debounce(handleResize, 150))
+	graphic()
 }
 
 init()
