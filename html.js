@@ -44,7 +44,7 @@ function compileTemplate(data) {
 function inlineSvg() {
 	return new Promise((resolve, reject) => {
 		inline('.tmp/index.html', {
-			ignore: dev ? 'link' : null,
+			ignore: dev ? ['link','script'] : null,
 			rootpath: `${out}`,
 		}, (err, html) => {
 			if (err) reject(err)
