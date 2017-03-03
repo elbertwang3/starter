@@ -1,23 +1,8 @@
-# starter
-
-A starter template for projects.
-
-* Write in ES6 (preset with d3)
-* Stylus for CSS pre-processor
-* Bundles, minifies JS with FuseBox
-* Bundles, minifies, auto-prefixes
-* Inlines CSS and SVG
-* Async font loading (using FOUT)
-
 ## Dependencies
 [node](http://nodejs.org)
 
 ## Setup
-Create a new project directory and `cd` into it, then:
-
-```
-curl -Lk http://bit.ly/2bgptna > Makefile; make;
-```
+Clone the project and run `npm i`
 
 ## Usage
 

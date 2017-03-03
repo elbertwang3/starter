@@ -5,6 +5,7 @@ all:
 	mv starter-master/.babelrc .
 	mv starter-master/.gitignore .
 	mv starter-master/.eslintrc.json .
-	rm -rf temp.zip starter-master Makefile
-	mv Makefile.story Makefile
+	rm -rf temp.zip starter-master Makefile README.md
+	mv Makefile.project Makefile
+	mv README-project.md README.md
 	npm i
