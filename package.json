@@ -39,6 +39,7 @@
     "inline-source": "^5.2.0",
     "light-server": "^1.1.10",
     "lodash.debounce": "^4.0.8",
+    "mkdirp": "^0.5.1",
     "npm-run-all": "^4.0.2",
     "onchange": "^3.2.1",
     "promis": "^1.1.4",

@@ -1,6 +1,7 @@
 const fs = require('fs')
 const handlebars = require('handlebars')
 const inline = require('inline-source')
+const mkdirp = require('mkdirp')
 
 const dev = process.argv[2] === '--dev'
 const out = dev ? 'dev' : 'dist'
@@ -36,6 +37,8 @@ function compileTemplate(data) {
 
 	const template = handlebars.compile(content)
 	const result = template(data)
+
+	mkdirp.sync('.tmp')
 	fs.writeFileSync('.tmp/index.html', result)
 
 	return Promise.resolve()
