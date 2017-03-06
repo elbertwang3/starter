@@ -10,7 +10,7 @@
     "build:html": "node html.js --dev",
     "prebuild": "rm -rf dev && mkdir dev && npm run build:assets",
     "build": "npm-run-all --parallel build:*",
-    "watch:assets": "onchange 'src/assets/**/*' -- npm run assets:dev && npm run build:html",
+    "watch:assets": "onchange 'src/assets/**/*' -- npm run build:assets && npm run build:html",
     "watch:html": "onchange 'src/html/**/*' -- npm run build:html",
     "serve": "light-server -q -p 4000 -s dev/. -w 'dev/bundle.css # # reloadcss' -w 'dev/bundle.js # #' -w 'dev/index.html # #' -w 'dev/assets/**/* # #'",
     "dev": "npm-run-all --parallel build serve watch:*",
