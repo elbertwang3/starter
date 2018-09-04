@@ -5,9 +5,12 @@ const htmlEl = document.documentElement
 const TIMEOUT = 5000
 
 function addFont(family) {
-	const first = family.split(' ')[0]
-	const name = first.toLowerCase().replace(/ /g, '-')
+	console.log(family)
+	//const first = family.split(' ')[0]
+	//console.log(first)
+	const name = family.toLowerCase().replace(/ /g, '-')
 	const className = `loaded-${name}`
+	console.log(className)
 	addClass(htmlEl, className)
 }
 
@@ -16,6 +19,7 @@ function handleError(err) {
 }
 
 function loadFont(font) {
+	console.log(font)
 	const { family, weight = 'normal' } = font
 	const fontObserver = new FontFaceObserver(family, { weight })
 	fontObserver
@@ -25,6 +29,7 @@ function loadFont(font) {
 }
 
 function loadFontGroup(group) {
+	console.log(group)
 	const promises = group.map(font =>
 		new Promise((resolve, reject) => {
 			const { family, weight, style = 'normal' } = font
