@@ -124,28 +124,28 @@ caption,th,td {
   margin-right: 0.25em;
 }
 
-.tk-canela {
-  font-family: 'Publico Text Web', Georgia, Times, serif;
+.tk-lora {
+  font-family: 'Lora', Georgia, Times, serif;
 }
 
-.loaded-canela .tk-canela {
-  font-family: 'Canela Web', 'Publico Text Web', Georgia, Times, serif;
+.loaded-lora .tk-lora {
+  font-family: 'Lora', Georgia, Times, serif;
 }
 
-.tk-publico {
-  font-family: 'Publico Text Web', Georgia, Times, serif;
+.tk-crimson-text {
+  font-family: 'Crimson Text', Georgia, Times, serif;
 }
 
-.loaded-publico .tk-publico {
-  font-family: 'Publico Text Web', 'Publico Text Web', Georgia, Times, serif;
+.loaded-crimson-text .tk-crimson-text {
+  font-family: 'Crimson Text', Georgia, Times, serif;
 }
 
-.tk-atlas {
-  font-family: 'Atlas Grotesk Web', Helvetica, Arial, sans-serif;
+.tk-lato {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
-.loaded-atlas .tk-atlas {
-  font-family: 'Atlas Grotesk Web', 'Atlas Grotesk Web', Helvetica, Arial, sans-serif;
+.loaded-lato .tk-lato {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
 .xxx-small {

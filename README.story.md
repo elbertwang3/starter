@@ -115,9 +115,9 @@ Checkout some of the auto-included files in `src/css/utils/` (`variables.styl`, 
 
 Fonts are loaded async and use the [FOUT](https://www.zachleat.com/web/comprehensive-webfonts/#fout-class) practice. We have three font families:
 
-- **Canela** (class name: `tk-canela`)
-- **Publico** (class name: `tk-publico`)
-- **Atlas Grotesk** (class name: `tk-atlas`)
+- **Canela** (class name: `tk-lora`)
+- **Publico** (class name: `tk-crimson-text`)
+- **Atlas Grotesk** (class name: `tk-lato`)
 
 Simply include the class on the element, and all children will inherit it. Publico is included on the body tag by default.
 
@@ -125,7 +125,7 @@ Example:
 
 ```html
 <div class='example'>
-	<p class='tk-atlas'>test</p>
+	<p class='tk-lato'>test</p>
 </div>
 ```
 

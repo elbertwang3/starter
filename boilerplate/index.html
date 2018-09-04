@@ -11,7 +11,7 @@
 	<meta name='news_keywords' content='tk' />
 	
 	<meta property='og:title' content='Title Case Headline Goes Here' />
-	<meta property='og:site_name' content='The Pudding' />
+	<meta property='og:site_name' content='Dremio' />
 	<meta property='og:url' content='https://pudding.cool/year/month/name/' />
 	<meta property='og:description' content='Your dek goes here. It is probably one or two sentences that succinctly describe more explicitly what the story will be about.' />
 	<meta property='og:type' content='article' />
@@ -23,8 +23,8 @@
 	<meta property='og:image:height' content='600' />
 	
 	<meta name='twitter:card' content='summary_large_image' />
-	<meta name='twitter:site' content='https://pudding.cool' />
-	<meta name='twitter:creator' content='@puddingviz' />
+	<meta name='twitter:site' content='https://www.dremio.com/' />
+	<meta name='twitter:creator' content='@dremiohq' />
 	<meta name='twitter:title' content='Title Case Headline Goes Here' />
 	<meta name='twitter:description' content='Your dek goes here. It is probably one or two sentences that succinctly describe more explicitly what the story will be about.' />
 	<meta name='twitter:image:src' content='https://pudding.cool/year/month/name/' />
@@ -40,101 +40,85 @@
 		
 
 	<style>
-		/*
-	        This font software is the property of Commercial Type.
-	
-	        You may not modify the font software, use it on another website, or install it on a computer.
-	
-	        License information is available at http://commercialtype.com/eula
-	        For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
-	
-	        Copyright (C) 2017 Schwartzco Inc.
-	        License: 1704-GNCLGK     
-	*/
-		/* Canela */
-	
+		/* lora-regular - latin */
 		@font-face {
-			font-family: 'Canela Web';
-			src: url('https://pudding.cool/assets/fonts/canela/Canela-Light-Web.woff2') format('woff2'),
-			url('https://pudding.cool/assets/fonts/canela/Canela-Light-Web.woff') format('woff');
-			font-weight: 300;
-			font-style: normal;
-			font-stretch: normal;
+		  font-family: 'Lora';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: url('./assets/fonts/lora-v12-latin-regular.eot'); /* IE9 Compat Modes */
+		  src: local('Lora Regular'), local('Lora-Regular'),
+		       url('./assets/fonts/lora-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		       url('./assets/fonts/lora-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		       url('./assets/fonts/lora-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+		       url('./assets/fonts/lora-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		       url('./assets/fonts/lora-v12-latin-regular.svg#Lora') format('svg'); /* Legacy iOS */
 		}
-	
+		/* lora-700 - latin */
 		@font-face {
-			font-family: 'Canela Web';
-			src: url('https://pudding.cool/assets/fonts/canela/Canela-Bold-Web.woff2') format('woff2'),
-			url('https://pudding.cool/assets/fonts/canela/Canela-Bold-Web.woff') format('woff');
-			font-weight: 700;
-			font-style: normal;
-			font-stretch: normal;
+		  font-family: 'Lora';
+		  font-style: normal;
+		  font-weight: 700;
+		  src: url('./assets/fonts/lora-v12-latin-700.eot'); /* IE9 Compat Modes */
+		  src: local('Lora Bold'), local('Lora-Bold'),
+		       url('./assets/fonts/lora-v12-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		       url('./assets/fonts/lora-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+		       url('./assets/fonts/lora-v12-latin-700.woff') format('woff'), /* Modern Browsers */
+		       url('./assets/fonts/lora-v12-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+		       url('./assets/fonts/lora-v12-latin-700.svg#Lora') format('svg'); /* Legacy iOS */
 		}
-		/* Publico Text */
-	
+
+		/* crimson-text-regular - latin */
 		@font-face {
-			font-family: 'Publico Text Web';
-			src: url('https://pudding.cool/assets/fonts/publico/PublicoText-Roman-Web.woff2') format('woff2'),
-			url('https://pudding.cool/assets/fonts/publico/PublicoText-Roman-Web.woff') format('woff');
-			font-weight: 400;
-			font-style: normal;
-			font-stretch: normal;
+		  font-family: 'Crimson Text';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: url('./assets/fonts/crimson-text-v8-latin-regular.eot'); /* IE9 Compat Modes */
+		  src: local('Crimson Text Regular'), local('CrimsonText-Regular'),
+		       url('./assets/fonts/crimson-text-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		       url('./assets/fonts/crimson-text-v8-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		       url('./assets/fonts/crimson-text-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
+		       url('./assets/fonts/crimson-text-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		       url('./assets/fonts/crimson-text-v8-latin-regular.svg#CrimsonText') format('svg'); /* Legacy iOS */
 		}
-	
+		/* crimson-text-italic - latin */
 		@font-face {
-			font-family: 'Publico Text Web';
-			src: url('https://pudding.cool/assets/fonts/publico/PublicoText-Bold-Web.woff2') format('woff2'),
-			url('https://pudding.cool/assets/fonts/publico/PublicoText-Bold-Web.woff') format('woff');
-			font-weight: 700;
-			font-style: normal;
-			font-stretch: normal;
+		  font-family: 'Crimson Text';
+		  font-style: italic;
+		  font-weight: 400;
+		  src: url('./assets/fonts/crimson-text-v8-latin-italic.eot'); /* IE9 Compat Modes */
+		  src: local('Crimson Text Italic'), local('CrimsonText-Italic'),
+		       url('./assets/fonts/crimson-text-v8-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		       url('./assets/fonts/crimson-text-v8-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+		       url('./assets/fonts/crimson-text-v8-latin-italic.woff') format('woff'), /* Modern Browsers */
+		       url('./assets/fonts/crimson-text-v8-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		       url('./assets/fonts/crimson-text-v8-latin-italic.svg#CrimsonText') format('svg'); /* Legacy iOS */
 		}
-	
+
+		/* lato-regular - latin */
 		@font-face {
-			font-family: 'Publico Text Web';
-			src: url('https://pudding.cool/assets/fonts/publico/PublicoText-Italic-Web.woff2') format('woff2'),
-			url('https://pudding.cool/assets/fonts/publico/PublicoText-Italic-Web.woff') format('woff');
-			font-weight: 400;
-			font-style: italic;
-			font-stretch: normal;
+		  font-family: 'Lato';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: url('./assets/fonts/lato-v14-latin-regular.eot'); /* IE9 Compat Modes */
+		  src: local('Lato Regular'), local('Lato-Regular'),
+		       url('./assets/fonts/lato-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		       url('./assets/fonts/lato-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		       url('./assets/fonts/lato-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+		       url('./assets/fonts/lato-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		       url('./assets/fonts/lato-v14-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
 		}
-		/* Atlast Grotesk */
-		/*
+		/* lato-700 - latin */
 		@font-face {
-			font-family: 'Atlas Grotesk Web';
-			src: url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Light-Web.woff2') format('woff2'),
-			url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Light-Web.woff') format('woff');
-			font-weight: 300;
-			font-style: normal;
-			font-stretch: normal;
-		}
-		*/
-	
-		@font-face {
-			font-family: 'Atlas Grotesk Web';
-			src: url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Regular-Web.woff2') format('woff2'),
-			url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Regular-Web.woff') format('woff');
-			font-weight: 400;
-			font-style: normal;
-			font-stretch: normal;
-		}
-	
-		@font-face {
-			font-family: 'Atlas Grotesk Web';
-			src: url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Medium-Web.woff2') format('woff2'),
-			url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Medium-Web.woff') format('woff');
-			font-weight: 500;
-			font-style: normal;
-			font-stretch: normal;
-		}
-	
-		@font-face {
-			font-family: 'Atlas Grotesk Web';
-			src: url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Bold-Web.woff2') format('woff2'),
-			url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Bold-Web.woff') format('woff');
-			font-weight: 600;
-			font-style: normal;
-			font-stretch: normal;
+		  font-family: 'Lato';
+		  font-style: normal;
+		  font-weight: 700;
+		  src: url('./assets/fonts/lato-v14-latin-700.eot'); /* IE9 Compat Modes */
+		  src: local('Lato Bold'), local('Lato-Bold'),
+		       url('./assets/fonts/lato-v14-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		       url('./assets/fonts/lato-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+		       url('./assets/fonts/lato-v14-latin-700.woff') format('woff'), /* Modern Browsers */
+		       url('./assets/fonts/lato-v14-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+		       url('./assets/fonts/lato-v14-latin-700.svg#Lato') format('svg'); /* Legacy iOS */
 		}
 	</style>
 	<!-- smoosh -->
@@ -152,7 +136,7 @@
 	</script>
 </head>
 
-<body class='tk-publico'>
+<body class='tk-crimson-text'>
 
 	<a href='#content' class='skip-to-main'>Skip to main content</a>
 	<header>
@@ -167,9 +151,9 @@
 	<main id='content'>
 
 		<div class='intro'>
-			<h1 class='intro__hed tk-canela'>Title Case Headline Goes Here</h1>
-			<p class='intro__dek tk-atlas'>Your dek goes here. It is probably one or two sentences that succinctly describe more explicitly what the story will be about.</p>
-			<p class='intro__byline tk-atlas'>By <a href='https://twitter.com/puddingviz' target='_blank'><strong>Author Name</strong></a></p>
+			<h1 class='intro__hed tk-lora'>Title Case Headline Goes Here</h1>
+			<p class='intro__dek tk-lato'>Your dek goes here. It is probably one or two sentences that succinctly describe more explicitly what the story will be about.</p>
+			<p class='intro__byline tk-lato'>By <a href='https://twitter.com/puddingviz' target='_blank'><strong>Author Name</strong></a></p>
 		</div>
 
 		<!-- PUT ALL YOUR HTML HERE-->
